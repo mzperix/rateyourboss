@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   	<link rel="stylesheet" type="text/css" href="myStyles.css">
-<script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip(); 
-});
-</script>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip(); 
+      });
+    </script>
     <title>Michael Scott</title>
   </head>
   <body>
   	<div class="myContainer">
   		<div class="header">
   			<div class="title">
-				<div class="companyName">Google</div>
+				<div class="companyName">Dunder Mifflin</div>
 				<div class="bossName">Michael Scott</div>
 			</div>
 			<div>
@@ -53,47 +53,96 @@ $(document).ready(function(){
           Technical expertise <span class="orangeTagScore">2</span>
         </div>
   		</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="coworkerReviewsSection">
+              <div class="coworkerReviewsTitle">Coworker reviews</div>
+              <div class="reviewSection">
+                <div>
+                  <img class="starStyle" src="images/oneStar.png">
+                  <span class="reviewTitle">Worst boss ever! DO NOT WORK FOR HIM!</span>
+                </div>
+                <div class="reviewText">
+                  Apart from his masterful salesmanship, Michael is lacking in almost any other skills, management or otherwise. How Michael spends his time: 80% distracting others; 19% procrastination; and 1% critical thinking. He inflated the "critical thinking" percentage so people could actually see it on the graph. His laid-back approach more often results in lower than expected workplace productivity, particularly when Michael places personal interests as a priority over work (such as his birthday, someone else's birthday, or his various seminars). 
+                </div>
+                <div class="reviewFooter">
+                  <span style="margin-right: 6px">
+                    <button type="button" class="btn msgIcon">
+                    <i class="far fa-thumbs-up likeIcon"></i>
+                    </button> 15
+                  </span>
+                  <button type="button" class="btn msgIcon" data-toggle="tooltip" data-placement="top" title="Message the author of this feedback directly for more details">
+                    <i class="far fa-envelope"></i>
+                  </button>
+                </div>
+              </div>
 
-      <div class="coworkerReviewsSection">
-        <div class="coworkerReviewsTitle">Coworker reviews</div>
-        <div class="reviewSection">
-          <div>
-            <img class="starStyle" src="images/oneStar.png">
-            <span class="reviewTitle">Worst boss ever! DO NOT WORK FOR HIM!</span>
+              <div class="reviewSection">
+                <div>
+                  <img class="starStyle" src="images/fiveStars.png">
+                  <span class="reviewTitle">Truly Is The World’s Best Boss</span>
+                </div>
+                <div class="reviewText">
+                  Michael considers himself as not just a boss but a friend to all those who work in the office.
+                  He’s there for his employees. He is determined to make the office a place of enlightenment so that his employees get more from their work days than just a paycheque. 
+                </div>
+                <div class="reviewFooter">
+                  <span style="margin-right: 6px">
+                    <button type="button" class="btn msgIcon">
+                    <i class="far fa-thumbs-up likeIcon"></i>
+                    </button> 2
+                  </span>
+                  <button type="button" class="btn msgIcon" data-toggle="tooltip" data-placement="top" title="Message the author of this feedback directly for more details">
+                    <i class="far fa-envelope"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="reviewText">
-            Apart from his masterful salesmanship, Michael is lacking in almost any other skills, management or otherwise. How Michael spends his time: 80% distracting others; 19% procrastination; and 1% critical thinking. He inflated the "critical thinking" percentage so people could actually see it on the graph. His laid-back approach more often results in lower than expected workplace productivity, particularly when Michael places personal interests as a priority over work (such as his birthday, someone else's birthday, or his various seminars). 
-          </div>
-          <div class="reviewFooter">
-            <span style="margin-right: 6px">
-              <button type="button" class="btn msgIcon">
-              <i class="far fa-thumbs-up likeIcon"></i>
-              </button> 15
-            </span>
-            <button type="button" class="btn msgIcon" data-toggle="tooltip" data-placement="top" title="Message the author of this feedback directly for more details">
-              <i class="far fa-envelope"></i>
-            </button>
-          </div>
-        </div>
+          <div class="col-md-4">
+            <div class="sidebar-title">Dunder Mifflin</div>
+            <div class="sidebar-section">
+              <div class="similar-positions">Similar positions</div>
+              <div class="real-section borderline">
+                <div class="people-section">
+                <div class="photocontainer"><img class="photo" src="images/jim.jpeg"></div>
+                <div>
+                  <div class="sidebar-score">3.7</div>
+                  <div class="other-name">Jim Halpert</div>
+                  <div class="other-position">Regional manager</div>
+                </div>
+                </div>
+                <div>
+                  <div class="greenTag">
+                    Micromanaging <span class="greenTagScore">5</span>
+                  </div>
+                  <div class="greenTag">
+                    Career development <span class="greenTagScore">4</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="real-section">
+                <div class="people-section">
+                <div class="photocontainer"><img class="photo" src="images/jan.jpeg"></div>
+                <div>
+                  <div class="sidebar-score" style="width: 80px;">2.7</div>
+                  <div class="other-name">Jan Levinson</div>
+                  <div class="other-position">Vice President of Northeast Sales</div>
+                </div>
+                </div>
+                <div>
+                  <div class="greenTag">
+                    Micromanaging <span class="greenTagScore">5</span>
+                  </div>
+                  <div class="orangeTag">
+                    Career development <span class="orangeTagScore">2</span>
+                  </div>
+                </div>
+              </div>
 
-        <div class="reviewSection">
-          <div>
-            <img class="starStyle" src="images/fiveStars.png">
-            <span class="reviewTitle">Truly Is The World’s Best Boss</span>
-          </div>
-          <div class="reviewText">
-            Michael considers himself as not just a boss but a friend to all those who work in the office.
-            He’s there for his employees. He is determined to make the office a place of enlightenment so that his employees get more from their work days than just a paycheque. 
-          </div>
-          <div class="reviewFooter">
-            <span style="margin-right: 6px">
-              <button type="button" class="btn msgIcon">
-              <i class="far fa-thumbs-up likeIcon"></i>
-              </button> 2
-            </span>
-            <button type="button" class="btn msgIcon" data-toggle="tooltip" data-placement="top" title="Message the author of this feedback directly for more details">
-              <i class="far fa-envelope"></i>
-            </button>
+            </div>
           </div>
         </div>
       </div>

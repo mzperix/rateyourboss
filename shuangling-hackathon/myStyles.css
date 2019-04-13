@@ -26,8 +26,8 @@
 	background-image: url('images/Background Shape.png');
 	background-repeat: no-repeat; 	
 	font-family: Helvetica;
-	padding: 120px 280px;
-	margin: 0 60px;
+	padding: 120px 240px;
+	margin: 0 20px;
 }
 
 .header {
@@ -204,4 +204,63 @@
 .graph {
 	margin-top: 12px;
 	width: 100%;
+}
+
+.sidebar-title {
+	background: #6DB1ED;
+	border-radius: 4px;
+	color: white;
+    margin: 36px auto 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+.sidebar-section {
+	background: #FFFFFF;
+	border: 1px solid #EBECED;
+	border-radius: 4px;
+    padding: 6px 18px;
+}
+
+.similar-positions {
+	opacity: 0.8;
+	font-size: 16px;
+    margin-top: 12px;
+	color: #6BAFED;
+}
+
+.people-section {
+	display: flex;
+    margin-top: 24px;    
+}
+
+.photocontainer {
+    margin-right: 6px;
+}
+
+.sidebar-score {
+	background: #F5A223;
+	border-radius: 15px;
+	font-size: 14px;
+	color: #FFFFFF;
+	padding: 2px 20px;
+	text-align: center;
+}
+
+.other-name {
+	font-size: 14px;
+	color: #2D343B;
+}
+
+.other-position {
+	font-size: 10px;
+	color: #2D343B;
+}
+
+.borderline {
+	border-bottom: 1px solid #EBECED;
+}
+
+.real-section {
+	padding-bottom: 16px;
 }
