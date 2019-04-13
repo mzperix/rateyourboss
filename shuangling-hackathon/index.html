@@ -9,32 +9,40 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="myStyles.css">
+    <link rel="stylesheet" type="text/css" href="auto-complete.css">
     <title>Rate my boss</title>
     <script type="text/javascript">
       function searchKeyPress(e) {
         e = e || window.event;
         if (e.keyCode === 13) {
 
-fetch('http://demo3062747.mockable.io/profile/123')
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(myJson) {
-    console.log(JSON.stringify(myJson));
-  });
-
           window.open('details.html','_blank');
         }
       }
     </script>
+    <script src="auto-complete.js"></script>
   </head>
   <body>
     <div class="index-container">
       <div class="rate-boss-title">RATE YOUR BOSS</div>
 
       <!-- Search form -->
-      <input class="form-control search-bar" type="text" placeholder="SEARCH FOR A BOSS" aria-label="Search" onkeypress="searchKeyPress(event);">
+      <input id="suggest_input" class="form-control search-bar" type="text" placeholder="SEARCH FOR A BOSS" aria-label="Search" onkeypress="searchKeyPress(event);">
     </div>
+    <script>
+        var demo1 = new autoComplete({
+            selector: '#suggest_input',
+            minChars: 1,
+            source: function(term, suggest){
+                term = term.toLowerCase();
+                var choices = ['Elon Musk', 'Michael Scott', 'Michael Jordan', 'Michael Phelps', 'Micky Mouse', 'Michael Jackson'];
+                var suggestions = [];
+                for (i=0;i<choices.length;i++)
+                    if (choices[i].toLowerCase().indexOf(term)>=0) suggestions.push(choices[i]);
+                suggest(suggestions);
+            }
+        });
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
