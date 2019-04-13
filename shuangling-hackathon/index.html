@@ -35,7 +35,7 @@
             minChars: 1,
             source: function(term, suggest){
                 term = term.toLowerCase();
-                var choices = ['Elon Musk', 'Michael Scott', 'Michael Jordan', 'Michael Phelps', 'Micky Mouse', 'Michael Jackson'];
+                var choices = ['Elon Musk', 'Michael Scott', 'Michael Jordan', 'Michael Phelps', 'Michael Jackson', 'Micky Mouse'];
                 var suggestions = [];
                 for (i=0;i<choices.length;i++)
                     if (choices[i].toLowerCase().indexOf(term)>=0) suggestions.push(choices[i]);
