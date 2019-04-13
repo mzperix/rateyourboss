@@ -22,7 +22,7 @@ class Boss extends Component {
             Searches from API:
           </p>
           <p>
-            {this.state.boss.name}
+            {this.state.boss.overall_score}
           </p>
       </div>
     );

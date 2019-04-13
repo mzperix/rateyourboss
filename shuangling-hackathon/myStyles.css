@@ -1,0 +1,207 @@
+.index-container {
+	background-image: url('images/greenShape.png');
+	background-repeat: no-repeat; 	
+	background-position-x: center;
+    background-position-y: 200px;
+	font-family: Helvetica;
+	padding: 120px 280px;
+	margin: 0 60px;
+}
+
+.search-bar {
+	-webkit-box-shadow: 2px 2px 7px 0px rgba(235,235,235,1);
+	-moz-box-shadow: 2px 2px 7px 0px rgba(235,235,235,1);
+	box-shadow: 2px 2px 7px 0px rgba(235,235,235,1);
+	border: 0;
+	margin-top: 160px;
+}
+
+.rate-boss-title {
+	color: #2D343B;
+	font-size: 36px;
+	text-align: center;
+}
+
+.myContainer {
+	background-image: url('images/Background Shape.png');
+	background-repeat: no-repeat; 	
+	font-family: Helvetica;
+	padding: 120px 280px;
+	margin: 0 60px;
+}
+
+.header {
+	align-items: center;
+	color: white;
+	display: flex;
+    justify-content: space-between;
+}
+
+.companyName {
+	opacity: 0.8;
+	font-size: 16px;
+	/*color: #FFFFFF;*/
+}
+
+.bossName {
+	font-size: 25px;
+	/*color: #FFFFFF;*/
+}
+
+.title {
+}
+
+.photo {
+	border-radius: 100%;
+	height: 60px;
+}
+
+.overallScore {
+    align-items: center;
+	background: #FFFFFF;
+	border: 1px solid #EBECED;
+	border-radius: 4px;
+	display: flex;
+    justify-content: space-between;
+    margin: 24px 0 0 0;
+	padding: 18px 20px;
+}
+
+.scoreTitle {
+	color: #2D343B;    
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 4px;
+}
+
+.rating {
+	font-size: 42px;
+	color: #F5A223;
+	letter-spacing: 0;
+}
+
+.fullRating {
+	font-size: 24px;
+	color: #F5A223;
+	letter-spacing: 0;
+}
+
+.numOfReviews {
+	font-size: 12px;
+	color: #1D1E1F;
+	line-height: 16px;
+}
+
+.orangeTag {
+	background: #FFDCA0;
+	border-radius: 3px;
+	color: #2D343B;    
+	display: inline-block;
+	font-size: 12px;
+    margin-right: 6px;
+    margin-top: 10px;
+    padding: 2px 6px;
+}
+
+.orangeTagScore {
+	background: white;
+    border-radius: 100%;
+	color: #F5A623;
+    height: 15px;
+    margin-left: 4px;
+    padding: 1px 5px;
+}
+
+.greenTag {
+	background: #D0EDAF;
+	border-radius: 3px;
+	color: #2D343B;    
+	display: inline-block;
+	font-size: 12px;
+    margin-right: 6px;
+    margin-top: 10px;
+    padding: 2px 6px;
+}
+
+.greenTagScore {
+	background: white;
+    border-radius: 100%;
+	color: #7ED321;
+    height: 15px;
+    margin-left: 4px;
+    padding: 1px 5px;
+}
+
+.coworkerReviewsSection {
+	margin-top: 36px;
+}
+
+.coworkerReviewsTitle {
+	opacity: 0.5;
+	font-size: 16px;
+	color: #2D343B;
+}
+
+.reviewText {
+	color: #000000;
+	font-size: 12px;
+}
+
+.reviewSection {
+	border: 1px solid #EBECED;
+	border-radius: 4px;
+    margin: 24px 0 0 0;
+	padding: 18px 20px;
+}
+
+.starStyle {
+	width: 80px;
+}
+
+.reviewTitle {
+	color: #000000;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.reviewFooter {
+	font-size: 12px;
+    text-align: right;
+}
+
+.msgIcon {
+    border-radius: 100%;
+    padding: 0px 4px;
+}
+
+.msgIcon:hover {
+	background-color: lightgrey;
+}
+
+.sentimentScoreNumber {
+	background-image: linear-gradient(206deg, #FAD961 0%, #F76B1C 100%);
+	border-radius: 2px;
+	color: white;
+	display: inline-block;
+	margin-left: 6px;
+    padding: 2px 8px;
+}
+
+.sentimentTitle {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.twitter-icon {
+	color: #00aced;
+}
+
+.linkedin-icon {
+	color: #0077B5;
+}
+
+.graph {
+	margin-top: 12px;
+	width: 100%;
+}
